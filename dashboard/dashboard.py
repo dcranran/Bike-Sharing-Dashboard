@@ -3,8 +3,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-day_df = pd.read_csv("https://raw.githubusercontent.com/dcranran/Bike-Sharing-Dashboard/main/day.csv")
-hour_df = pd.read_csv("https://raw.githubusercontent.com/dcranran/Bike-Sharing-Dashboard/main/hour.csv")                    
+day_df = pd.read_csv("https://raw.githubusercontent.com/dcranran/Bike-Sharing-Dashboard/main/data/day.csv")
+hour_df = pd.read_csv("https://raw.githubusercontent.com/dcranran/Bike-Sharing-Dashboard/main/data/hour.csv")                    
 
 day_df["dteday"] = pd.to_datetime(day_df["dteday"])
 hour_df["dteday"] = pd.to_datetime(hour_df["dteday"])
